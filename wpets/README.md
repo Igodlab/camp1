@@ -101,8 +101,8 @@ INSTALLED_APPS = [
 
 ### 2.2 Django architecture
 
-   URL patterns      --->       Views          --->      Templates 
- wisdompets/urls.py       adopt/views.py         adopt/templates
+   URL patterns      --->       Views         --->      Templates 
+ wisdompets/urls.py         adopt/views.py           adopt/templates
                                   |
                                   |
                                 Models
@@ -219,4 +219,15 @@ TypeError: __call__() missing 1 required keyword-only argument: 'manager'
 <QuerySet []>
 >>> 
 ```
+
+# URL Patterns
+
+URL pattern mathcing for handling URL requests. More info [here](https://docs.djangoproject.com/en/3.2/topics/http/urls/)
+
+Django uses three elements inside a pattern mathcing function. They are
+
+- First, **path converter** which is a pattern string
+- Second, View to use
+- Third, Name (optional) this can be used to create links to this routes
+
 
